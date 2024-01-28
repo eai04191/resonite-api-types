@@ -1,0 +1,19 @@
+{
+    "name": "resonite-api-types",
+    "version": "0.0.1",
+    "description": "Type definitions for Resonite API",
+    "types": "./src/lib/api.d.ts",
+    "scripts": {
+        "test:ts": "tsc --noEmit",
+        "generate": "openapi-typescript openapi.yml -o ./src/lib/api.d.ts"
+    },
+    "keywords": [
+        "resonite"
+    ],
+    "author": "Eai",
+    "license": "MIT",
+    "devDependencies": {
+        "openapi-typescript": "^6.7.4",
+        "typescript": "^5.3.3"
+    }
+}
